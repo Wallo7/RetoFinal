@@ -19,7 +19,7 @@ public class Game implements Serializable {
 
     @ManyToOne
     @JoinColumn(name="idCategory")
-    @JsonIgnoreProperties("game")
+    @JsonIgnoreProperties("games")
     private Category category;
 
     @OneToMany(cascade = {CascadeType.PERSIST}, mappedBy = "game")
