@@ -36,7 +36,7 @@ public class GameController {
     public Game update(@RequestBody Game game){
         return gameService.update(game);
     }
-    @DeleteMapping("{id")
+    @DeleteMapping("{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public Boolean delete(@PathVariable("id")int id){
         return gameService.dalateGame(id);
