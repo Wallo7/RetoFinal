@@ -63,8 +63,8 @@ public class GameService {
     }
 
     public boolean dalateGame(int id){
-        Boolean aBoolean=getGame(id).map(client -> {
-            gameRepository.delete(client);
+        Boolean aBoolean=getGame(id).map(game -> {
+            gameRepository.delete(game);
             return true;
         }).orElse(false);
         return aBoolean;

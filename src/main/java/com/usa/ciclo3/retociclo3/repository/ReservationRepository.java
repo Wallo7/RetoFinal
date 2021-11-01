@@ -29,6 +29,7 @@ public class ReservationRepository {
     public void delete(Reservation reservation){
         reservationCrudRepository.delete(reservation);
     }
+
     public List<Reservation> getReservationByStatus(String status){
         return reservationCrudRepository.findAllByStatus(status);
     }
