@@ -3,19 +3,19 @@ package com.usa.ciclo3.retociclo3.reports;
 import com.usa.ciclo3.retociclo3.model.Client;
 
 public class CountClients {
-    private Double total;
+    private Long total;
     private Client client;
 
-    public CountClients(Double total, Client client) {
+    public CountClients(Long total, Client client) {
         this.total = total;
         this.client = client;
     }
 
-    public Double getTotal() {
+    public Long getTotal() {
         return total;
     }
 
-    public void setTotal(Double total) {
+    public void setTotal(Long total) {
         this.total = total;
     }
 
